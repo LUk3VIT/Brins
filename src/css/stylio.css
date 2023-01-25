@@ -1,0 +1,27 @@
+body{
+    background-color: #1c1c1c;
+    font-family: 'Lora', serif;
+}
+
+.cabecalho{
+    background-color: #000000;
+    padding: 22px;
+}
+
+.cabecalho__titulo{
+    font-size: 45px;
+    /* imagem de fundo */
+    background-image: url('https://oportaln10.com.br/wp-content/uploads/2015/09/fogo4-1.jpg');
+    /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* a cor do texto deve estar como transparent */
+    color: transparent;
+}
+
+.cabecalho__sub-titulo{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
