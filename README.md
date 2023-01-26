@@ -5,6 +5,8 @@ uma pratica leve
 
 fazer um site bonito.
 
-Header
+Header:100%
 
-Feito no HTML, falta estilizar
+Feito
+
+Nav: 

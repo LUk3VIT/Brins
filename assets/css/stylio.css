@@ -1,0 +1,146 @@
+body{
+    background-color: #1c1c1c;
+    font-family: 'Lora', serif;
+}
+
+.cabecalho{
+    background-color: #000000;
+    padding: 22px;
+}
+
+.cabecalho__titulo{
+    font-size: 45px;
+    /* imagem de fundo */
+    background-image: url('https://oportaln10.com.br/wp-content/uploads/2015/09/fogo4-1.jpg');
+    /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* a cor do texto deve estar como transparent */
+    color: transparent;
+}
+
+.cabecalho__sub-titulo{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.funciona{
+    display: flex;
+}
+
+.input-checkbox{
+    display: none;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    margin: 5px;
+}
+
+.nav-button span::before,
+.nav-button span::after,
+.nav-button span {
+    background-color: #ffffff;
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-button span::before,
+.nav-button span::after{
+    content: "";
+    position: relative;
+    display: inline-block;
+}
+
+.nav-button span::before{
+    top: -20px;
+}
+
+.nav-button span::after{
+    top: -18px;
+}
+
+.input-checkbox:checked + .nav-button span {
+    background-color: transparent;
+}
+
+.input-checkbox:checked + .nav-button span::before {
+    top: -11px;
+    transform: rotate(135deg);
+}
+
+.input-checkbox:checked + .nav-button span::after {
+    top: -27px;
+    transform: rotate(-135deg);
+}
+
+.box--nav{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background: #B22222;
+    margin: 5px;
+    margin-left: 76px;
+    padding: 5px;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+    width: 302px;;
+}
+
+.box--nav__ativo{
+    left: 0;
+    transition: .25;
+    position: relative;
+}
+
+.box--nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.box--nav__menu--lista{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-left: 26px;
+    padding-bottom: 8px;
+}
+
+.box--nav__menu--lista__link{
+    color: #0c0c0c;
+    margin: 8px 2px;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.link--ativo{
+ color: #ffffff;
+ border-left: #FFFFFF solid 3px;
+}
+
+.icone{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.icone-luz{
+    margin-right: 18px;
+    margin-left: 20px;
+}
