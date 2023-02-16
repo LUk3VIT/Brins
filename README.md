@@ -2,11 +2,7 @@
 
 uma pratica leve 
 
+site Feito:
 
-fazer um site bonito.
-
-Header:100%
-
-Feito
-
-Nav: 
+-treino de responsabilidade
+-foco do site é de exibir série 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luz | Home</title>
+    <title>Lux | Favoritos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="assets/css/stylio.css">
 </head>
 <body>
-
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">
             Lux
@@ -31,16 +30,16 @@
         <div class="box--nav">
             <p class="box--nav__menu">Menu</p>
             <nav class="box--nav__menu--lista">
-                <a class="box--nav__menu--lista__link link--ativo" href="index.html"><i class="fa fa-home icone"></i> Home</a>
+                <a class="box--nav__menu--lista__link" href="index.html"><i class="fa fa-home icone"></i> Home</a>
                 <a class="box--nav__menu--lista__link" href="pesquisa.html"><i class="fa-solid fa-magnifying-glass icone"></i> Pesquisa</a>
-                <a class="box--nav__menu--lista__link" href="favoritos.html"><i class="fa-solid fa-heart icone"></i> Favoritos</a>
+                <a class="box--nav__menu--lista__link link--ativo" href="favoritos.html"><i class="fa-solid fa-heart icone"></i> Favoritos</a>
             </nav>
         </div>
     </div>
-
+    
     <main>
         <div class="recomendacao">
-            <h1 class="recomendacao-titulo">Recomendacao</h1>
+            <h1 class="recomendacao-titulo">Recentes</h1>
             <button class="recomendacao__vidio-left control solta"><i class="fa-solid fa-arrow-left"></i></button> 
             <button class="recomendacao__vidio-right control"><i class="fa-solid fa-arrow-right"></i></button>
             <div class="recomendacao-gallery">
@@ -101,21 +100,19 @@
                             <p class="recomendacao-card__tempo"><i class="fa-solid fa-video"></i>43m</p>
                         </div>
                     </article>
+                    <article class="recomendacao-card item current-item">
+                        <img src="assets/img/série01.jpg" alt="stranger things" class="recomendacao-card__img">
+                        <div class="recomendacao-card__info">
+                            <h4 class="recomendacao-card__titulo">Stranger Things</h4>
+                            <p class="recomendacao-card__tempo"><i class="fa-solid fa-video"></i>43m</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-        
-        <article class="principal">
-            <img src="assets/img/principal.jpg" alt="Série em destaque" class="principal-img">
-            <div class="sem-menu">
-                <a class="principal__like"><p class="principal__like__text-destop">Like</p><i class="fa-solid fa-thumbs-up"></i></a>
-                <a class="principal__assistir"><p class="principal__assistir__text-destop">Assistir</p><i class="fa-solid fa-play"></i></a>
-                <a class="principal__salvar"><i class="fa-solid fa-plus"></i></a>
-            </div>
-        </article>
 
         <div class="outros">
-            <h1 class="outros-titulo">Outros</h1>
+            <h1 class="outros-titulo">Favoritos</h1>
             <div class="exibi-serie">
                 <article class="card">
                     <img src="assets/img/série01.jpg" alt="stranger things" class="card__img">
@@ -168,6 +165,7 @@
             </div>
         </div>
     </main>
+
 
 <script src="assets/javaScrip/carrosel.js"></script>
 <script src="assets/javaScrip/indes.js"></script>
